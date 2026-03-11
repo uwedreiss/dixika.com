@@ -1,0 +1,14 @@
+# Do not upload VCS or local tooling files as public assets
+.git/
+.wrangler/
+.claude/
+node_modules/
+
+# Local environment files
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+
+# macOS / editor noise
+.DS_Store
