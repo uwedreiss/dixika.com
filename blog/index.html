@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dixika.com/blog">
   <meta property="og:title" content="Dixika Blog">
-  <meta property="og:description" content="SEO and LLM visibility insights for US-focused teams.">
+  <meta property="og:description" content="SEO and LLM visibility insights for growth-focused teams.">
   <meta property="og:site_name" content="Dixika">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dixika Blog">
@@ -45,45 +45,19 @@
       <section class="hero">
         <div class="container">
           <div class="row g-4 align-items-center">
-            <div class="col-lg-8 reveal">
+            <div class="col-lg-9 reveal">
               <span class="kicker mb-3">Insights</span>
               <h1 class="page-title mb-3">Dixika Blog</h1>
               <p class="lead mb-0">Frameworks and tactical playbooks for SEO, content, links, Reddit, and AI answer visibility.</p>
-            </div>
-            <div class="col-lg-4 reveal">
-              <div class="panel p-4">
-                <h2 class="h5">Publishing model</h2>
-                <p class="small-muted mb-0">Currently static posts in the `/blog` folder. Can be replaced with BlogHandy feed at any time.</p>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="section pt-0">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-lg-6 reveal">
-              <article class="blog-card h-100">
-                <p class="meta mb-2">March 12, 2026 · 8 min read</p>
-                <h3><a href="/blog/reddit-seo-blueprint">Reddit SEO Blueprint for US SaaS Teams</a></h3>
-                <p class="small-muted">How to build Reddit trust and referral loops that support both classic search and AI visibility.</p>
-                <a href="/blog/reddit-seo-blueprint" class="btn btn-outline-brand btn-sm mt-2">Read Post</a>
-              </article>
-            </div>
-            <div class="col-lg-6 reveal">
-              <article class="blog-card h-100">
-                <p class="meta mb-2">March 12, 2026 · 10 min read</p>
-                <h3><a href="/blog/geo-llm-optimization-playbook">GEO/LLM Optimization Playbook: First 90 Days</a></h3>
-                <p class="small-muted">A practical rollout sequence for strengthening entity clarity and citation probability.</p>
-                <a href="/blog/geo-llm-optimization-playbook" class="btn btn-outline-brand btn-sm mt-2">Read Post</a>
-              </article>
-            </div>
-          </div>
-
-          <div class="panel p-4 p-lg-5 mt-5 reveal" id="bloghandy-feed">
-            <h2 class="h4 mb-3">Blog Feed Integration Slot</h2>
-            <p class="small-muted mb-0">When you are ready, place your BlogHandy JavaScript snippet here and keep this page URL as <code>/blog</code>.</p>
+        <div class="container reveal">
+          <div class="panel p-4 p-lg-5">
+            <div id="bh-posts"></div>
           </div>
         </div>
       </section>
@@ -104,6 +78,11 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="/assets/js/site.js"></script>
+  <script>
+    var bh_id = "60O6Ih7lbXkRWSNjMxMw";
+    var bh_template_list_id = "9";
+  </script>
+  <script src="https://www.bloghandy.com/api/bh_blogengine.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>

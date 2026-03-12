@@ -165,6 +165,7 @@ a:hover {
   font-weight: 700;
   padding: 0.8rem 1.35rem;
   box-shadow: 0 14px 24px rgba(143, 92, 255, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .btn-brand:hover {
@@ -173,15 +174,25 @@ a:hover {
 }
 
 .btn-outline-brand {
-  border: 1px solid rgba(184, 137, 255, 0.4);
-  color: var(--text);
-  background: rgba(20, 24, 38, 0.52);
+  border: 1px solid rgba(189, 159, 255, 0.55);
+  color: #f6f4ff;
+  font-weight: 700;
+  padding: 0.8rem 1.35rem;
+  background:
+    linear-gradient(rgba(8, 11, 20, 0.74), rgba(8, 11, 20, 0.74)) padding-box,
+    linear-gradient(120deg, rgba(184, 137, 255, 0.74), rgba(57, 214, 255, 0.62)) border-box;
+  box-shadow: 0 14px 24px rgba(14, 20, 37, 0.42);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
 .btn-outline-brand:hover {
   color: #fff;
-  border-color: var(--accent-cool);
-  background: rgba(57, 214, 255, 0.12);
+  border-color: rgba(57, 214, 255, 0.86);
+  background:
+    linear-gradient(rgba(12, 18, 31, 0.85), rgba(12, 18, 31, 0.85)) padding-box,
+    linear-gradient(120deg, rgba(255, 105, 215, 0.7), rgba(57, 214, 255, 0.76)) border-box;
+  box-shadow: 0 18px 28px rgba(57, 214, 255, 0.2);
+  transform: translateY(-1px);
 }
 
 .panel {
@@ -331,6 +342,93 @@ a:hover {
   padding: 1rem 1.1rem;
   border-radius: 0.6rem;
   background: rgba(57, 214, 255, 0.12);
+}
+
+/* BlogHandy dark theme overrides for template-list-id-9 and shared classes */
+#bh-posts,
+#bh-posts .bh-container,
+#bh-posts .bh-engine {
+  color: var(--text);
+  background: transparent;
+}
+
+#bh-posts .bh-post,
+#bh-posts .post,
+#bh-posts .post-box,
+#bh-posts .bh-post-wrap,
+#bh-posts .bh-post-wrap-extended {
+  border-radius: 1rem;
+  border: 1px solid rgba(198, 166, 255, 0.16);
+  background: rgba(18, 23, 38, 0.8);
+  box-shadow: 0 20px 36px rgba(4, 7, 15, 0.35);
+  overflow: hidden;
+}
+
+#bh-posts .bh-post-title,
+#bh-posts .post-title,
+#bh-posts .post-title-box {
+  font-family: "Syne", "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+#bh-posts .bh-post-title a,
+#bh-posts .post-title a,
+#bh-posts .bh-post-title-link {
+  color: var(--text);
+}
+
+#bh-posts .bh-post-title a:hover,
+#bh-posts .post-title a:hover,
+#bh-posts .bh-post-title-link:hover {
+  color: var(--accent-cool);
+}
+
+#bh-posts .bh-post-content,
+#bh-posts .post-content,
+#bh-posts .bh-post-text,
+#bh-posts .post-text,
+#bh-posts .content {
+  color: var(--text-dim);
+}
+
+#bh-posts .bh-post-image img,
+#bh-posts .post-image img,
+#bh-posts .featured-image img,
+#bh-posts .post-img img {
+  border-radius: 0.9rem;
+}
+
+#bh-posts .bh-meta-box,
+#bh-posts .bh-meta-author,
+#bh-posts .bh-meta-date,
+#bh-posts .bh-meta-readtime,
+#bh-posts .post-info,
+#bh-posts .post-publish-date {
+  color: #b1aec7;
+}
+
+#bh-posts .bh-category-top-menu a,
+#bh-posts .bh-category-text,
+#bh-posts .post-category a {
+  color: #e2dcff;
+}
+
+#bh-posts .bh-more-btn,
+#bh-posts .read-more-btn,
+#bh-posts .bh-pagination a {
+  border: 1px solid rgba(189, 159, 255, 0.55);
+  color: #f6f4ff;
+  border-radius: 0.6rem;
+  background: rgba(8, 11, 20, 0.72);
+}
+
+#bh-posts .bh-more-btn:hover,
+#bh-posts .read-more-btn:hover,
+#bh-posts .bh-pagination a:hover {
+  color: #fff;
+  border-color: rgba(57, 214, 255, 0.8);
+  background: rgba(57, 214, 255, 0.14);
 }
 
 @media (max-width: 992px) {
