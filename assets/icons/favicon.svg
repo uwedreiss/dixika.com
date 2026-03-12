@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dixika favicon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8f5cff"/>
+      <stop offset="60%" stop-color="#b889ff"/>
+      <stop offset="100%" stop-color="#ff69d7"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#39d6ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#090d17"/>
+  <rect x="5" y="5" width="54" height="54" rx="12" fill="url(#bg)" opacity="0.28"/>
+  <path d="M17 12h14.2c12.2 0 20.8 8 20.8 20s-8.6 20-20.8 20H17V12zm10.2 9.2v21.6h3.2c7.7 0 12.6-4.1 12.6-10.8s-4.9-10.8-12.6-10.8h-3.2z" fill="#f8f7ff"/>
+  <circle cx="51.5" cy="51.5" r="4.5" fill="url(#glow)"/>
+</svg>
